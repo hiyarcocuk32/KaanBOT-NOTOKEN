@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
 	var channelID = "502481162254680074";
 
 	if (!k.roliste){
-		return message.reply("Kardeş Malmısın Hangi Rolu isteyeceğini de Yanına Yazsana! Doğru kullanım: **k.roliste <mesaj>**");
+		return message.reply("Kardeş Malmısın Hangi Rolu isteyeceğini de Yanına Yazsana! Doğru kullanım: **!k roliste <mesaj>**");
 	} else {
 
 		var embed = new Discord.RichEmbed()
