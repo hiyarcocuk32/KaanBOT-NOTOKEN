@@ -16,7 +16,7 @@ exports.run = function(client, message, args) {
 			.addField("Eylem:", "Rol İste")
 			.addField("Kullanıcı:", message.author.tag)
 			.addField("ID", message.author.id)
-			.addField("Rol İste", "Rol İste")
+			.addField("Rol İste", roliste)
 
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		message.channel.send("Rol İsteğiniz Alınmıştır Eğer Rol Reddedilirse Daha Çok Çabalayın!!");
