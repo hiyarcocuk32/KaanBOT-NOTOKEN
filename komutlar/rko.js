@@ -7,15 +7,15 @@ exports.run = (client, message, params) => {
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .addField('**Eðlence Komutlarý Özel Mesajlarda Kullanýlamaz!**')
+    .addField('**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**')
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor(message.author.username + ('Nice RKO!!!')
+    .setAuthor(message.author.username + ' Nice RKO!!')
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://media.giphy.com/media/nlpGGSPpiIwcU/giphy.gif`);
+		.setImage(`https://media.giphy.com/media/nlpGGSPpiIwcU/giphy.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
@@ -29,6 +29,6 @@ exports.conf = {
 
 exports.help = {
   name: 'rko',
-  description: 'RKO çekersiniz.',
+  description: 'Rko çekersiniz!',
   usage: 'rko'
 };
