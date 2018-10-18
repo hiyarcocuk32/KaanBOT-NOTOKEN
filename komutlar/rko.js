@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://media.giphy.com/media/nlpGGSPpiIwcU/giphy.gif`)
+		.setImage(`https://media.giphy.com/media/nlpGGSPpiIwcU/giphy.gif`);
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
