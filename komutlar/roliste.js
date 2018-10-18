@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
 	var guildID = "501775306546216960";
 	var channelID = "502481162254680074";
 
-	if (k!roliste){
+	if (! roliste){
 		return message.reply("Kardeş Malmısın Hangi Rolu isteyeceğini de Yanına Yazsana! Doğru kullanım: **!k roliste <mesaj>**");
 	} else {
 
