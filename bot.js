@@ -16,10 +16,10 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir('./komutlar/', (err, files) => {
   if (err) console.error(err);
-  log(`${files.length} komut yüklenecek.`);
+  log(`${files.length} komut yÃ¼klenecek.`);
   files.forEach(f => {
     let props = require(`./komutlar/${f}`);
-    log(`Yüklenen komut: ${props.help.name}.`);
+    log(`YÃ¼klenen komut: ${props.help.name}.`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
@@ -81,9 +81,9 @@ client.unload = command => {
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('Aleyküm selam,  hoþ geldin ^^'); 
+			msg.author.sendMessage('AleykÃ¼m selam,  hoÃ¾ geldin ^^'); 
 		} else {
-		msg.reply('Aleyküm selam, hoþ geldin ^^');
+		msg.reply('AleykÃ¼m selam, hoÃ¾ geldin ^^');
 		}
 	}
 });
@@ -108,4 +108,4 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
