@@ -28,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'surf',
-  description: 'Surf Yaparsýnýz.',
-  usage: 'surf'
+  name: 'rko',
+  description: 'RKO çekersiniz.',
+  usage: 'rko'
 };
