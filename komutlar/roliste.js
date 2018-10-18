@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
 			.addField("Rol İste", roliste)
 
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
-		message.channel.send("Rol İsteğiniz Alınmıştır Eğer Rol Reddedilirse Daha Çok Çabalayın!!");
+		message.reply("Rol İsteğiniz Alınmıştır Eğer Rol Reddedilirse Daha Çok Çabalayın!!");
 	};
 
 
