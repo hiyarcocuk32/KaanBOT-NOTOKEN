@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
@@ -28,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yumruh-at',
+  name: 'yumruk-at',
   description: 'Yumruk Atar.',
-  usage: 'yumruh-at'
+  usage: 'yumruk-at'
 };
