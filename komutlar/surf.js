@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://www.youtube.com/watch?v=shrlM5ZjdiA`)
+		.setImage(`https://www.google.com.tr/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwju3uG-jpDeAhUG2aQKHUPtDc8QjRx6BAgBEAU&url=https%3A%2F%2Fgfycat.com%2Fgifs%2Fsearch%2Fawesome%2Bsurf%2Bgifs&psig=AOvVaw2UT0KRE09RhQKyBre2SepI&ust=1539956274129503`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
