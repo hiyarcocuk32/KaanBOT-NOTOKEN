@@ -88,6 +88,14 @@ client.on('message', msg => {
 	}
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'discord.gg') {
+    msg.delete(30)  
+    msg.reply('**Reklam Yapmaya Devam Edersen Banlanacaksın!!**');
+  }
+});
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
