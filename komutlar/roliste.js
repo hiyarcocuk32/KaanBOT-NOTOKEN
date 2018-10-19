@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
 	var channelID = "502481162254680074";
 
 	if (! roliste){
-		return message.reply("Kardeş Malmısın Hangi Rolu isteyeceğini de Yanına Yazsana! Doğru kullanım: **!k roliste <mesaj>**");
+		return message.reply("Kardeş Malmısın Hangi Rolu isteyeceğini de Yanına Yazsana! Doğru kullanım: **k!roliste <mesaj>**");
 	} else {
 
 		var embed = new Discord.RichEmbed()
@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
 			.addField("Rol İste", roliste)
 
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
-		message.reply("Rol İsteğiniz Alınmıştır Eğer Rol Reddedilirse Daha Çok Çabalayın!!");
+		message.reply("Rol İsteğiniz Alınmıştır Owner Kurucu VB. isteyenlerin ID si Elimize Geliyor Anında BAN!!");
 	};
 
 
