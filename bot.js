@@ -90,7 +90,8 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'discord.gg') {
-    msg.delete(30)  
+    msg.delete(30) 
+    client.channels.get(502152951523966977)	  
     msg.reply('**Reklam Yapmaya Devam Edersen Banlanacaksın!!**');
   }
 });
