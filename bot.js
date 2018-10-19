@@ -95,6 +95,13 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'amk|piç|oç|orospu|anan|sikik|siktir|aq|') {
+    msg.delete(30)  
+    msg.reply('**Küfür Etmeye Devam Edersen Banlanacaksın!!**');
+  }
+});
+
 
 client.elevation = message => {
   if(!message.guild) {
