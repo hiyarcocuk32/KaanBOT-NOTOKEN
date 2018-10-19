@@ -96,7 +96,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'amk|piç|oç|orospu|anan|sikik|siktir|aq|') {
+  if (msg.content.toLowerCase() === 'amk') {
     msg.delete(30)  
     msg.reply('**Küfür Etmeye Devam Edersen Banlanacaksın!!**');
   }
